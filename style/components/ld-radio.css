@@ -1,22 +1,22 @@
-/* Classe Base Ld-Radio */
+/* Classe base Ld-Radio */
 .ld-radio{
     position: relative;
     padding-left: 32px;
     padding-top: 2px;
     cursor: pointer;
+    display: inline-block;
     font-size: calc(var(--ld-font-size-base) + 8px);
     font-family: var(--ld-font-family-base);
 }
-/*Esconde o radio button nativo do browser*/
 
+/* Esconde o Radio Button Nativo do Browser */
 .ld-radio > input{
     opacity: 0;
     position: absolute;
     cursor: pointer;
 }
 
-/*Estilo base do nosso checkmark*/
-
+/* Estilo Base do Nosso Checkmark */
 .ld-radio >.checkmark{
     display: inline-block;
     border-radius: 50%;
@@ -28,13 +28,13 @@
     left: 0;
 }
 
-/*Estiliza e prenche o fundo do Checkmark quando radiobutton é checado*/
+/* Estiliza e preenche o fundo do Checkmark quando radiobutton é checado */
 .ld-radio >input:checked ~ .checkmark{
     background-color: white;
     border-color: var(--ld-color-primary);
 }
 
-/*Estilo base do ponto*/
+/* Estilo base do Ponto */
 .ld-radio >.checkmark:after{
     width: 12px;
     height: 12px;
@@ -47,7 +47,7 @@
     display: none;
 }
 
-/*Mostra o ponto quando o radio button for checado*/
-.ld-radio >input:checked ~ .checkmark::after{
+/* Mostra o ponto quando radio button for checado */
+.ld-radio >input:checked ~ .checkmark:after{
     display: block;
 }

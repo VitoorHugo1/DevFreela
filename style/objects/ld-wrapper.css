@@ -1,7 +1,7 @@
 .ld-wrapper{
     max-width: var(--ld-main-wrapper);
     margin: 0 auto;
-}  
+}
 
 .ld-wrapper >.main-content{
     position: relative;
@@ -23,7 +23,6 @@
     grid-template-columns: 1fr;
 }
 
-
 .ld-wrapper >.main-content >.right{
     overflow: hidden;
     position: relative;
@@ -33,8 +32,8 @@
 .ld-wrapper >.main-content >.right >.image{
     position: absolute;
     height: 100%;
-    top: 0;
     min-width: 100%;
+    top: 0;
     left: 50%;
     transform: translateX(-50%);
 }
