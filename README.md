@@ -10,7 +10,7 @@ Projeto de Desenvolvimento Front-End disponibilizado pela plataforma LuisDev Con
 <hr>
 
 
-## Tela de Login
+## Tela de Cadastro
 
 ![TelaDeCadastro](https://github.com/VitoorHugo1/DevFreela/assets/103538149/deade474-0c7e-405e-a6e8-4a303534a420)
 
