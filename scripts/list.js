@@ -8,7 +8,7 @@ window.onload = function () {
 }
 
 function getProjects() {
-    fetch("https://65c3809e39055e7482c10aa8.mockapi.io/api/projects")
+    fetch("")
         .then(response => response.json())
         .then(response => {
             list = response;
@@ -21,7 +21,7 @@ function goToEdit(id) {
 }
 
 function deleteProject(id) {
-    fetch(`https://65c3809e39055e7482c10aa8.mockapi.io/api/projects/${id}`, {
+    fetch(`/${id}`, {
             method: 'DELETE'
         })
         .then(response => response.json())

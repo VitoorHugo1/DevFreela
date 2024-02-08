@@ -15,7 +15,7 @@ function createOrEdit() {
     }
 
     // Enviar para API
-    fetch(`https://65c3809e39055e7482c10aa8.mockapi.io/api/projects${screenType === 'edit' ? ('/' + params.id) : ''}`, {
+    fetch(`${screenType === 'edit' ? ('/' + params.id) : ''}`, {
             method: screenType === 'edit' ? 'PUT' : 'POST',
             body: JSON.stringify(payload),
             headers: {
@@ -41,7 +41,7 @@ window.onload = function () {
 
 function fillInputs() {
     if (screenType === 'edit') {
-        fetch(`https://65c3809e39055e7482c10aa8.mockapi.io/api/projects/${params.id}`)
+        fetch(`/${params.id}`)
             .then(response => response.json())
             .then(project => {
                 document.querySelector("#title").value = project.title;
