@@ -29,14 +29,15 @@ function cadastrar() {
 
     // Enviar para API
     fetch("users", {
-            method: 'POST',
-            body: JSON.stringify(payload),
-            headers: {
-                'Content-Type': 'application/json'
+                fetch("https://.mockapi.io/api/users", {
+                    method: 'POST',
+                    body: JSON.stringify(payload),
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                })
+                .then(response => response.json())
+                .then(response => {
+                    alert('Cadastrado com sucesso!');
+                })
             }
-        })
-        .then(response => response.json())
-        .then(response => {
-            alert('Cadastrado com sucesso!');
-        })
-}
