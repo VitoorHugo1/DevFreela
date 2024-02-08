@@ -15,7 +15,7 @@ function createOrEdit() {
     }
 
     // Enviar para API
-    fetch(`projects${screenType === 'edit' ? ('/' + params.id) : ''}`, {
+    fetch(`https://65c3809e39055e7482c10aa8.mockapi.io/api/projects${screenType === 'edit' ? ('/' + params.id) : ''}`, {
             method: screenType === 'edit' ? 'PUT' : 'POST',
             body: JSON.stringify(payload),
             headers: {
@@ -29,12 +29,29 @@ function createOrEdit() {
             } else {
                 alert('Cadastrado com sucesso!');
             }
+
+            window.location.href = "list.html";
         })
 }
 
 window.onload = function () {
     setScreenTypeTexts();
+    fillInputs();
 }
+
+function fillInputs() {
+    if (screenType === 'edit') {
+        fetch(`https://65c3809e39055e7482c10aa8.mockapi.io/api/projects/${params.id}`)
+            .then(response => response.json())
+            .then(project => {
+                document.querySelector('#title').value = project.title;
+                document.querySelector('#totalCost').value = project.totalCost;
+                document.querySelector('#description').value = project.description;
+
+            })
+    }
+}
+
 
 function setScreenTypeTexts() {
     // MODO CRIAR
