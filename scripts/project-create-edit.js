@@ -11,7 +11,7 @@ function createOrEdit() {
         title: document.querySelector("#title").value,
         totalCost: document.querySelector("#totalCost").value,
         description: document.querySelector("#description").value,
-        idClient: "1"
+        idClient: localStorage.getItem("idClient")
     }
 
     // Enviar para API
@@ -44,14 +44,12 @@ function fillInputs() {
         fetch(`https://65c3809e39055e7482c10aa8.mockapi.io/api/projects/${params.id}`)
             .then(response => response.json())
             .then(project => {
-                document.querySelector('#title').value = project.title;
-                document.querySelector('#totalCost').value = project.totalCost;
-                document.querySelector('#description').value = project.description;
-
+                document.querySelector("#title").value = project.title;
+                document.querySelector("#totalCost").value = project.totalCost;
+                document.querySelector("#description").value = project.description;
             })
     }
 }
-
 
 function setScreenTypeTexts() {
     // MODO CRIAR

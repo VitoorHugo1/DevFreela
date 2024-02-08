@@ -1,4 +1,4 @@
-.ld-table{
+.ld-table {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
     background-color: white;
@@ -8,13 +8,13 @@
 
 /* HEAD */
 
-.ld-table >.head {
+.ld-table>.head {
     font-size: calc(var(--ld-font-size-base) + 6px);
     font-weight: 600;
     color: var(--ld-color-gray-light);
 }
 
-.ld-table >.head >.row {
+.ld-table>.head>.row {
     display: grid;
     grid-template-columns: 2fr 1fr 100px;
     padding-left: 32px;
@@ -24,11 +24,9 @@
 
 /* BODY */
 
-.ld-table >.body {
-    
-}
+.ld-table>.body {}
 
-.ld-table >.body >.row {
+.ld-table>.body>.row {
     display: grid;
     padding: 24px 32px;
     align-items: center;
@@ -36,50 +34,44 @@
     border-bottom: 1px solid var(--ld-color-gray-lighter);
 }
 
-.ld-table >.body >.row:first-child {
+.ld-table>.body>.row:first-child {
     padding-top: 15px;
 }
 
-.ld-table >.body >.row:last-child {
+.ld-table>.body>.row:last-child {
     border-bottom: none;
 }
 
 /* BODY - TITLE-DESCRIPTION */
 
-.ld-table >.body >.row >.title-description {
-    
-}
+.ld-table>.body>.row>.title-description {}
 
-.ld-table >.body >.row >.title-description >.title {
+.ld-table>.body>.row>.title-description>.title {
     font-weight: 600;
     margin-bottom: 8px;
 }
 
-.ld-table >.body >.row >.title-description >.description {
-    
-}
+.ld-table>.body>.row>.title-description>.description {}
 
 /* BODY - PRICE */
 
-.ld-table >.body >.row >.price {
+.ld-table>.body>.row>.price {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
 }
 
 /* BODY - ACTIONS */
 
-.ld-table >.body >.row >.actions {
+.ld-table>.body>.row>.actions {}
 
-}
-
-.ld-table >.body >.row >.actions >.edit {
+.ld-table>.body>.row>.actions>.edit {
     color: var(--ld-color-primary);
     margin-right: 5px;
     cursor: pointer;
     font-size: 26px;
 }
 
-.ld-table >.body >.row >.actions >.delete {
+.ld-table>.body>.row>.actions>.delete {
     color: var(--ld-color-danger);
     cursor: pointer;
     font-size: 26px;

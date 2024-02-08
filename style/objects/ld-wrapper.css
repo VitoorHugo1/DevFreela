@@ -1,16 +1,16 @@
-.ld-wrapper{
+.ld-wrapper {
     max-width: var(--ld-main-wrapper);
     margin: 0 auto;
 }
 
-.ld-wrapper >.main-content{
+.ld-wrapper>.main-content {
     position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding-top: var(--ld-header-size);
 }
 
-.ld-wrapper >.main-content >.back-btn{
+.ld-wrapper>.main-content>.back-btn {
     position: fixed;
     top: calc(var(--ld-header-size) + 38px);
     font-size: calc(var(--ld-font-size-base) + 50px);
@@ -19,17 +19,17 @@
     text-decoration: none;
 }
 
-.ld-wrapper >.main-content.-one-col{
+.ld-wrapper>.main-content.-one-col {
     grid-template-columns: 1fr;
 }
 
-.ld-wrapper >.main-content >.right{
+.ld-wrapper>.main-content>.right {
     overflow: hidden;
     position: relative;
     height: calc(100vh - var(--ld-header-size));
 }
 
-.ld-wrapper >.main-content >.right >.image{
+.ld-wrapper>.main-content>.right>.image {
     position: absolute;
     height: 100%;
     min-width: 100%;
