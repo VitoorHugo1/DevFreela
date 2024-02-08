@@ -28,7 +28,7 @@ function cadastrar() {
     }
 
     // Enviar para API
-    fetch("https://65c3809e39055e7482c10aa8.mockapi.io/api/users", {
+    fetch("users", {
             method: 'POST',
             body: JSON.stringify(payload),
             headers: {
@@ -37,7 +37,6 @@ function cadastrar() {
         })
         .then(response => response.json())
         .then(response => {
-            alert('Cadastrado com sucesso');
+            alert('Cadastrado com sucesso!');
         })
-
 }
