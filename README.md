@@ -31,3 +31,7 @@ Projeto de Desenvolvimento Front-End disponibilizado pela plataforma LuisDev Con
 
 ![ListarProjetos](https://github.com/VitoorHugo1/DevFreela/assets/103538149/b43e5d14-9a69-4858-8bec-3aab3a4cfcf9)
 <hr>
+
+## Cadastro realizado com sucesso
+
+![CadastroSucesso](https://github.com/VitoorHugo1/DevFreela/assets/103538149/8e559de1-5d51-47a4-991c-93dd5b643a5f)
