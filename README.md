@@ -4,9 +4,9 @@ Projeto de Desenvolvimento Front-End disponibilizado pela plataforma LuisDev Con
 
 ## Stack utilizada 🛠
 
-**Front-end:** HTML, CSS, JavaScript
+**Front-end:** HTML, CSS
 
-**Back-end:** MockAPI
+**Back-end:** MockAPI, JavaScript
 <hr>
 
 
@@ -35,3 +35,10 @@ Projeto de Desenvolvimento Front-End disponibilizado pela plataforma LuisDev Con
 ## Cadastro realizado com sucesso
 
 ![CadastroSucesso](https://github.com/VitoorHugo1/DevFreela/assets/103538149/8e559de1-5d51-47a4-991c-93dd5b643a5f)
+<hr>
+
+## Erro de cadastro
+
+![ErroDeLogin](https://github.com/VitoorHugo1/DevFreela/assets/103538149/2612d909-faba-4d35-8b1d-f6f6606207bd)
+
+<hr>
