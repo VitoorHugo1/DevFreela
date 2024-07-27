@@ -1,6 +1,6 @@
 # Projeto DevFreela
 
-Projeto de Desenvolvimento Front-End disponibilizado pela plataforma LuisDev Consultoria e Treinamentos em Tecnologia.
+Projeto de Desenvolvimento Front-End disponibilizado pela plataforma Next Wave Education.
 
 ## Stack utilizada 🛠
 
